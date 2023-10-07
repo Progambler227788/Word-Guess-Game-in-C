@@ -1,17 +1,17 @@
-Word Guessing Game
+**Word Guessing Game**
 
-Libraries Used:
+**Libraries Used:**
 
 Standard I/O functions (stdio.h).
 Standard library functions (stdlib.h).
 String manipulation functions (string.h).
 Time-related functions (time.h).
 Character type functions (ctype.h).
-Global Variables:
+**Global Variables:**
 
 maximumWordLength: Specifies the maximum length of the word to be guessed.
 maximumGuesses: Specifies the maximum number of guesses allowed.
-Functions:
+**Functions:**
 
 noRepetitiveCharacters(const char *word): Checks if a word has repetitive characters.
 hasGuessed(const char* guessedLetters, char letter): Checks if a letter has already been guessed.
@@ -23,20 +23,19 @@ isInWord(const char* word, char letter): Checks if a letter is in the word being
 getRandomNumber(int min, int max): Returns a random number between the given range.
 playGame(char** words, int wordCount, int wordLength, int maxGuesses): The main gameplay logic where the user guesses letters until they either guess the word or run out of attempts.
 main(int argc, char* argv[]): The main function that initializes the game, loads the dictionary, and starts the game. It expects three command-line arguments: the dictionary file's name, the desired word length, and the maximum number of guesses.
-Gameplay Overview:
+**Gameplay Overview:**
 
 The game initializes by loading words of a specified length from a dictionary file.
 A secret word is randomly selected.
 The player guesses letters one by one.
 After each guess, the game provides feedback about the guess's correctness and displays the current state of the word.
 The game continues until the player guesses the word or exhausts all allowed guesses.
-How to Run:
+**How to Run:**
 To play the game, you need to run it from the command line and provide three arguments: the dictionary file's name, the desired word length, and the maximum number of guesses.
 
-Example:
+**Example:**
 
-bash
-Copy code
+**Copy code**
 ./game_program dictionary.txt 5 10
 Where game_program is the name of the compiled executable, dictionary.txt is the name of the dictionary file, 5 is the word length, and 10 is the maximum number of guesses.
 
