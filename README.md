@@ -7,10 +7,18 @@ Standard library functions (stdlib.h).
 String manipulation functions (string.h).
 Time-related functions (time.h).
 Character type functions (ctype.h).
+
+
+
+
 **Global Variables:**
 
 maximumWordLength: Specifies the maximum length of the word to be guessed.
 maximumGuesses: Specifies the maximum number of guesses allowed.
+
+
+
+
 **Functions:**
 
 noRepetitiveCharacters(const char *word): Checks if a word has repetitive characters.
@@ -22,7 +30,11 @@ loadWords(char* filename, char*** words, int wordLength): Loads words from a dic
 isInWord(const char* word, char letter): Checks if a letter is in the word being guessed.
 getRandomNumber(int min, int max): Returns a random number between the given range.
 playGame(char** words, int wordCount, int wordLength, int maxGuesses): The main gameplay logic where the user guesses letters until they either guess the word or run out of attempts.
-main(int argc, char* argv[]): The main function that initializes the game, loads the dictionary, and starts the game. It expects three command-line arguments: the dictionary file's name, the desired word length, and the maximum number of guesses.
+main(int argc, char* argv[]): The main function that initializes the game, loads the dictionary, and starts the game.
+It expects three command-line arguments: the dictionary file's name, the desired word length, and the maximum number of guesses.
+
+
+
 **Gameplay Overview:**
 
 The game initializes by loading words of a specified length from a dictionary file.
